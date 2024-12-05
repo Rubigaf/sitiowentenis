@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro - Tienda de Tenis</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Enlace al archivo CSS con los estilos personalizados -->
+    <link rel="stylesheet" href="../CSS/formulario.css">
+</head>
+
+<body>
+
+    <!-- Header de la página -->
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Imagenes/jordan.logo.jpg" alt="Logo Tienda de Tenis" class="img-fluid"
+                        style="max-width: 150px;">
+                </a>
+                <!-- Botón de colapso -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenido colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="descuentos.html">Descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Catalogo_g.html">Catálogo general</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="inf_autor.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="formulario.html">Regístrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="nuevo.html">Lo más nuevo</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main: Formulario de Registro -->
+    <main class="registro py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-lg border-light">
+                        <div class="card-header text-center bg-warning">
+                            <h2 class="text-white mb-0">Regístrate en Tienda de Tenis</h2>
+                        </div>
+                        <div class="card-body">
+                            <form id="formRegistro">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contraseña" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="contraseña" name="contraseña"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmar_contraseña" class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" id="confirmar_contraseña"
+                                        name="confirmar_contraseña" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-warning btn-lg">Registrarse</button>
+                                </div>
+                            </form>
+
+                            <!-- Mensaje de éxito o error -->
+                            <div id="mensaje" class="alert mt-4" style="display: none;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Aside: Información adicional o promociones -->
+    <aside class="bg-light py-4">
+        <div class="container">
+            <h3>Promociones Especiales</h3>
+            <p>Aprovecha nuestras ofertas exclusivas de temporada y consigue los mejores tenis con descuento.</p>
+            <ul>
+                <li><a href="#">Descuentos en modelos seleccionados</a></li>
+                <li><a href="#">Oferta por tiempo limitado en nuestra tienda online</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tienda de Tenis. Todos los derechos reservados.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.facebook.com/share/Z9EFLu7VqfG5jN28/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook fs-3 text-white"></i></a>
+                <a href="https://www.instagram.com/rubi.gaf/profilecard/?igsh=MWo0dWkzcWMyNWZ0cg==" target="_blank"><i class="bi bi-instagram fs-3 text-white"></i></a>
+                <a href="#"><i class="bi bi-twitter fs-3 text-white"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS y jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para manejar el envío del formulario
+        document.getElementById("formRegistro").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío del formulario por defecto
+
+            // Obtener los valores de los campos
+            let nombre = document.getElementById("nombre").value;
+            let correo = document.getElementById("correo").value;
+            let contraseña = document.getElementById("contraseña").value;
+            let confirmarContraseña = document.getElementById("confirmar_contraseña").value;
+            let telefono = document.getElementById("telefono").value;
+
+            // Validar que las contraseñas coincidan
+            if (contraseña !== confirmarContraseña) {
+                mostrarMensaje("Las contraseñas no coinciden.", "danger");
+            } else if (nombre === "" || correo === "" || telefono === "") {
+                mostrarMensaje("Todos los campos son obligatorios.", "danger");
+            } else {
+                mostrarMensaje("¡Registro exitoso! Gracias por registrarte.", "success");
+            }
+        });
+
+        // Función para mostrar el mensaje de éxito o error
+        function mostrarMensaje(mensaje, tipo) {
+            let divMensaje = document.getElementById("mensaje");
+            divMensaje.textContent = mensaje;
+            divMensaje.className = "alert alert-" + tipo; // Cambia el tipo de mensaje (éxito o error)
+            divMensaje.style.display = "block"; // Muestra el mensaje
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%; /* Bordes redondeados */
+    width: 50px; /* Aumentar tamaño */
+    height: 50px;
+}
+
+.carousel-control-prev-icon::after,
+.carousel-control-next-icon::after {
+    content: ''; /* Limpia el contenido predeterminado */
+}
+
+.carousel-control-prev-icon {
+    background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/chevron-left.svg');
+    background-size: 20px 20px; /* Tamaño del icono */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-control-next-icon {
+    background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/chevron-right.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.img-container {
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.img-container img {
+    height: 100%;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
+}

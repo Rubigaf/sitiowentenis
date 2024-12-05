@@ -1,0 +1,59 @@
+/* Estilos generales para el formulario */
+.registro {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+.registro h2 {
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Estilos de los campos de entrada */
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid #ced4da;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #1f1e1e;
+    box-shadow: 0 0 5px #1f1e1e(243, 156, 18, 0.5);
+}
+
+/* Estilos para el botón */
+button[type="submit"] {
+    background-color: #1f1e1e;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #1f1e1e;
+}
+
+/* Estilos para los mensajes de éxito o error */
+.alert {
+    border-radius: 0.5rem;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: #fff;
+}

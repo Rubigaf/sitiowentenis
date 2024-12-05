@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Tenis</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Enlace a los íconos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- archivo CSS propio -->
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="Imagenes/Icono.webp" alt="Logo Tienda de Tenis" class="img-fluid"
+                        style="max-width: 150px;">
+                </a>
+                <!-- Botón de colapso -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenido colapsable -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/descuentos.html">Descuentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/Catalogo_g.html">Catálogo general</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/inf_autor.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/formulario.html">Regístrate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="HTML/nuevo.html">Lo más nuevo</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero text-center d-flex flex-column justify-content-center align-items-center"
+        style="background-image: url('Imagenes/Background.jpg'); height: 70vh; background-size: cover;">
+        <b>
+
+            <h1> Bienvenido a la tienda de tenis
+        </b>
+        <p>Los mejores tenis para cada estilo y ocasión</p>
+        </h1>
+        <a href="#products" class="btn btn-warning btn-lg mt-3">Ver Productos</a>
+    </section>
+
+    <section id="products" class="products py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Nuestros Productos</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/Model1.jpg" class="card-img-top" alt="Tenis 1">
+                        <div class="card-body">
+                            <h3 class="card-title">Modelo 1</h3>
+                            <p class="card-text">$2,300.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/Model2.jpg" class="card-img-top" alt="Tenis 2">
+                        <div class="card-body">
+                            <h3 class="card-title">Modelo 2</h3>
+                            <p class="card-text">$2,500.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="Imagenes/Model3.jpg" class="card-img-top" alt="Tenis 3">
+                        <div class="card-body">
+                            <h3 class="card-title">Modelo 3</h3>
+                            <p class="card-text">$2,300.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Sobre Nosotros</h2>
+            <p>En nuestra tienda, ofrecemos una amplia selección de tenis para todos los gustos y edades. Nos
+                enorgullecemos de brindar calidad y estilo en cada uno de nuestros productos.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Tienda de Tenis. Todos los derechos reservados.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.facebook.com/share/Z9EFLu7VqfG5jN28/?mibextid=LQQJ4d" target="_blank"><i class="bi bi-facebook fs-3 text-white"></i></a><a href="https://www.instagram.com/rubi.gaf/profilecard/?igsh=MWo0dWkzcWMyNWZ0cg==" target="_blank"><i class="bi bi-instagram fs-3 text-white"></i></a>
+                <a href="#"><i class="bi bi-twitter fs-3 text-white"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace a Bootstrap Java script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
